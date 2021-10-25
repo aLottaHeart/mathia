@@ -29,6 +29,12 @@ In `System32\drivers\etc\hosts` add:
 
 Create `.env.local` and edit `APP_SECRET` as well as `DATABASE_URL`.
 
+Install bootstrap:
+```shell
+$ npm install bootstrap --save-dev
+$ npm install jquery @popperjs/core --save-dev
+$ npm install sass-loader@^10.0.0 sass --save-dev
+ ```
 ## Linux (Nginx)
 (wip)
 # Usage
