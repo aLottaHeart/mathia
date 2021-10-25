@@ -7,7 +7,7 @@ $ composer create-project symfony/website-skeleton mathia
 
 ## Windows (XAMPP Apache)
 
-In `xampp\apache\conf\extra\httpd-vhost.conf` add
+In `xampp\apache\conf\extra\httpd-vhost.conf` add:
 ```
 <VirtualHost *:80>
 	ServerName mathia
@@ -22,10 +22,12 @@ In `xampp\apache\conf\extra\httpd-vhost.conf` add
 </VirtualHost>
 ```
 
-In `System32\drivers\etc\hosts` add
+In `System32\drivers\etc\hosts` add:
 ```
 127.0.0.1	mathia
 ```
+
+Create `.env.local` and edit `APP_SECRET` as well as `DATABASE_URL`.
 
 ## Linux (Nginx)
 (wip)
