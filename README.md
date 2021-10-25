@@ -28,3 +28,14 @@ In `System32\drivers\etc\hosts` add
 ```
 
 ## Linux (Nginx)
+(wip)
+# Usage
+
+## dev
+```shell
+$ npm run watch
+```
+## prod
+```shell
+$ npm run build
+```
