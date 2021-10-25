@@ -11,4 +11,9 @@ class HomeController extends AbstractController
     {
         return $this->render('home.html.twig');
     }
+
+    public function penguin(): Response
+    {
+        return $this->render('penguin.html.twig');
+    }
 }

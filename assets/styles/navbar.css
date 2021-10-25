@@ -1,14 +1,14 @@
 .navbar {
     background-color: #212529;
-    color: #ffffff8c;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.24) 0 7px 5px, rgba(0, 0, 0, 0.48) 0 2px 3px;
 }
 
-.nav-link {
+.navbar-expand-sm .navbar-nav .nav-link {
     color: var(--ma-col-secondary);
+    padding: .5rem 1rem;
 }
-.nav-link:hover {
-    color: white;
+.navbar-expand-sm .navbar-nav .nav-link:hover {
+    color: var(--ma-col);
 }

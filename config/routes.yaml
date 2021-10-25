@@ -1,3 +1,10 @@
 home:
     path: /
     controller: App\Controller\HomeController::index
+penguin:
+    path: /pingu
+    controller: App\Controller\HomeController::penguin
+
+astro_list:
+    path: /astro/list
+    controller: App\Controller\AstroController::list

@@ -11,6 +11,8 @@ import './styles/global.scss';
 import './styles/app.css';
 import './styles/navbar.css';
 
+import './styles/penguin.css';
+
 // start the Stimulus application
 import './bootstrap';
 
@@ -18,6 +20,8 @@ import './bootstrap';
 const $ = require('jquery');
 require('bootstrap');
 
+/*
 $(document).ready(function() {
     $('[data-toggle="popover"]').popover();
 });
+*/
