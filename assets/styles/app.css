@@ -1,0 +1,9 @@
+body {
+    font: normal normal normal 30px 'Roboto-400', sans-serif;
+    background-color: var(--ma-col-bg);
+    color: var(--ma-col);
+}
+
+h1 {
+    color: var(--ma-col-secondary);
+}

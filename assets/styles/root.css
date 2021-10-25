@@ -1,0 +1,11 @@
+:root {
+    --ma-col-bg: #2c3034ff;
+    --ma-col: white;
+    --ma-col-secondary: #2bbc8af4;
+    --ma-col-tertiary: #994ad2ff;
+}
+
+@font-face {
+    font-family: 'Roboto-700';
+    src: url('../font/Roboto-Bold.ttf') format("truetype");
+}
