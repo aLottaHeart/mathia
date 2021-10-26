@@ -10,6 +10,7 @@ import './styles/root.css';
 import './styles/global.scss';
 import './styles/app.css';
 import './styles/navbar.css';
+import './styles/pagination.css';
 
 import './styles/penguin.css';
 

@@ -5,6 +5,6 @@ penguin:
     path: /pingu
     controller: App\Controller\HomeController::penguin
 
-astro_list:
-    path: /astro/list
+astro:
+    path: /astro
     controller: App\Controller\AstroController::list

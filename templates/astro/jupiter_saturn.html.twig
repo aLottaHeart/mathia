@@ -1,0 +1,26 @@
+{% extends 'astro/astro.html.twig' %}
+
+{% block page %}
+
+    <div class="row">
+        <div class="col-12 d-flex justify-content-center align-items-center text-center pt-5 px-4 pb-2">
+            Afterwards I analyzed some pictures and tried to label every group of stars<br>
+            Currently I only have the German constellations, <br>
+            but below the picture you can find a translation :)
+        </div>
+        <div class="col-12">
+            <img src="{{ asset('build/astro/jupiter_saturn.jpg') }}" alt="Jupiter and Saturn">
+        </div>
+        <div class="col-12 d-flex justify-content-center align-items-center text-center pt-5 px-4 pb-2">
+            Schwan = Cygnus<br>
+            Fuchs = Vulpecula<br>
+            Pfeil = Sagitta<br>
+            Delphin = Delphinus<br>
+            Füllen = Equuleus<br>
+            Adler = Aquila<br>
+            Wassermann = Aquarius<br>
+            Steinbock = Capricornus<br>
+        </div>
+    </div>
+
+{% endblock %}

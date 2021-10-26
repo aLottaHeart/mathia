@@ -1,0 +1,13 @@
+.page-link {
+    background-color: var(--ma-col-bg-dark);
+    border: 1px solid black;
+    color: white;
+}
+
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: var(--ma-col-secondary);
+    border-color: var(--ma-col-secondary);
+}
+
