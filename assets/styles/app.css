@@ -4,6 +4,10 @@ body {
     color: var(--ma-col);
 }
 
+.navbar {
+    font: normal normal normal 30px 'Roboto-700', sans-serif;
+}
+
 h1 {
     color: var(--ma-col-secondary);
 }
