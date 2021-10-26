@@ -2,8 +2,8 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <link rel="icon" href="{{ asset('pingu.ico') }}" type="image/icon type">
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="icon" href="{{ asset('mathia.ico') }}" type="image/icon type">
+        <title>{% block title %}Mathia{% endblock %}</title>
         {% block stylesheets %}
             {{ encore_entry_link_tags('app') }}
         {% endblock %}
@@ -17,6 +17,9 @@
             <nav class="navbar navbar-expand-sm">
                 <div class="container-fluid">
                     <div class="navbar-nav h3">
+                        <div class="d-flex align-items-center">
+                            <img src="{{ asset('build/mathia.png') }}" alt="Mathia logo" height="50px">
+                        </div>
                         <a class="nav-link" href="{{ path('home') }}">Home</a>
                         <a class="nav-link" href="{{ path('penguin') }}">Pingu</a>
                         <a class="nav-link" href="{{ path('astro_list') }}">Astrophotography</a>
