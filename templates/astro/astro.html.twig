@@ -2,31 +2,34 @@
 
 {% block content %}
 
-    <h1>
-        A Night Journey
-    </h1>
+    <div class="d-flex justify-content-center flex-column align-items-center">
+        <h1>
+            A Night Journey
+        </h1>
 
-    <nav aria-label="Page navigation example">
-        <ul class="pagination pagination-sm">
-            <li class="page-item">
-                <a class="page-link" href="#" aria-label="Previous">
-                    <span aria-hidden="true">&laquo;</span>
-                </a>
-            </li>
-            {% for i,name in {0: 'intro', 1: 'tree', 2: 'jupiter_saturn', 3: 'andromeda'} %}
-                <li class="page-item {{ name != img_name ?: 'active' }}">
-                    <a class="page-link" href="{{ path('astro', {'img_name': name}) }}">{{ i }}</a>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination pagination-sm">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
                 </li>
-            {% endfor %}
-            <li class="page-item">
-                <a class="page-link" href="#" aria-label="Next">
-                    <span aria-hidden="true">&raquo;</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
+                {% set pages = {0: 'intro', 1: 'tree', 2: 'jupiter_saturn', 3: 'andromeda'} %}
+                {% for i,name in pages %}
+                    <li class="page-item {{ name != img_name ?: 'active' }}">
+                        <a class="page-link" href="{{ path('astro', {'img_name': name}) }}">{{ i }}</a>
+                    </li>
+                {% endfor %}
+                <li class="page-item">
+                    <a class="page-link" href="" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        {% block page %}{% endblock %}
+    </div>
 
-    {% block page %}{% endblock %}
 
 
 {% endblock %}

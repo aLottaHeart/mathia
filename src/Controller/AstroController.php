@@ -12,6 +12,8 @@ class AstroController extends AbstractController
     {
         $img_name = $request->get('img_name') ?: 'intro';
 
+        $img_names = [0 => 'intro', 1 => 'tree', 2 => 'jupiter_saturn', 3 => 'andromeda'];
+
         return $this->render(sprintf('astro/%s.html.twig', $img_name), [
             'img_name' => $img_name
         ]);
