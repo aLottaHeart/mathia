@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" href="{{ asset('mathia.ico') }}" type="image/icon type">
         <title>{% block title %}Mathia{% endblock %}</title>
         {% block stylesheets %}
@@ -14,24 +15,28 @@
     </head>
     <body>
         <div class="navbar">
-            <div class="col-12 col-lg-2 d-lg-block d-flex justify-content-start justify-content-md-center px-3">
-                <div class="d-flex justify-content-start align-items-center">
-                    <img class="nav-logo" src="{{ asset('build/mathia.png') }}" alt="Mathia logo">
-                    <div class="px-3">mathia</div>
-                </div>
+            <div class="col-12 col-md-2 d-lg-block d-flex justify-content-center justify-content-lg-start px-3">
+                <a href="{{ path('home') }}">
+                    <div class="d-flex justify-content-start justify-content-md-center align-items-center">
+                        <img class="nav-logo" src="{{ asset('build/mathia.png') }}" alt="Mathia logo">
+                        <div class="px-3">mathia</div>
+                    </div>
+                </a>
             </div>
-            <div class="col-12 col-lg-8 d-flex justify-content-center navbar-expand-sm">
+            <div class="col-12 col-md-8 d-flex justify-content-center navbar-expand-sm navbar-expand">
                 <div class="navbar-nav h3">
-                    {% for route,name in {'home': "Home", 'penguin': "Pingu", 'astro': "Astrophotography", 'p5': "p5.js"} %}
+                    {% for route,name in {'home': "Home", 'penguin': "Pingu", 'astro': "Astro", 'p5': "p5.js"} %}
                         <a class="nav-link {% if route == app.request.get('_route') %}nav-active{% endif %}" href="{{ path(route) }}">{{ name }}</a>
                     {% endfor %}
                 </div>
             </div>
             <div class="d-none col-lg-2 d-lg-block d-flex justify-content-end justify-content-md-center px-3">
-                <div class="d-flex justify-content-end align-items-center">
-                    <img class="nav-yt" src="{{ asset('build/yt_icon_mono_dark.png') }}" alt="Youtube">
-                    <div class="px-3">Tammo</div>
-                </div>
+                <a href="https://www.youtube.com/channel/UCdB8eBbhubYS2jxAhNAbKdw">
+                    <div class="d-flex justify-content-end align-items-center">
+                        <div class="px-3">Tammo</div>
+                        <img class="nav-yt" src="{{ asset('build/yt_icon_mono_dark.png') }}" alt="Youtube">
+                    </div>
+                </a>
             </div>
         </div>
         <div class="container-lg">
