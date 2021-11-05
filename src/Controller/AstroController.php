@@ -10,12 +10,21 @@ class AstroController extends AbstractController
 {
     public function list(Request $request): Response
     {
-        $img_name = $request->get('img_name') ?: 'intro';
+        $img_names = [
+            0 => 'intro',
+            1 => 'tree',
+            2 => 'jupiter_saturn',
+            3 => 'andromeda'
+        ];
 
-        $img_names = [0 => 'intro', 1 => 'tree', 2 => 'jupiter_saturn', 3 => 'andromeda'];
+        $img_id = $request->get('img_id');
+        if (!$img_id || $img_id < 0) {
+            $img_id = 0;
+        }
+        $img_id = min($img_id, count($img_names)-1);
 
-        return $this->render(sprintf('astro/%s.html.twig', $img_name), [
-            'img_name' => $img_name
+        return $this->render(sprintf('astro/%s.html.twig', $img_names[$img_id]), [
+            'img_id' => $img_id
         ]);
     }
 }
