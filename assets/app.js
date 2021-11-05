@@ -11,8 +11,12 @@ import './styles/global.scss';
 import './styles/app.css';
 import './styles/navbar.css';
 import './styles/pagination.css';
-
 import './styles/penguin.css';
+
+require('p5/lib/p5.min')
+import './js/rocket.js';
+import './js/particle.js';
+import './js/sketch.js';
 
 // start the Stimulus application
 import './bootstrap';

@@ -8,3 +8,7 @@ penguin:
 astro:
     path: /astro
     controller: App\Controller\AstroController::list
+
+p5:
+    path: /p5
+    controller: App\Controller\ProcessingController::index

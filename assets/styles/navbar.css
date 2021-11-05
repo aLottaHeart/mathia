@@ -1,14 +1,40 @@
 .navbar {
     background-color: var(--ma-col-bg-dark);
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.24) 0 7px 5px, rgba(0, 0, 0, 0.48) 0 2px 3px;
+    white-space: nowrap;
 }
 
 .navbar-expand-sm .navbar-nav .nav-link {
     color: var(--ma-col);
     padding: .5rem 1rem;
 }
-.navbar-expand-sm .navbar-nav .nav-link:hover {
+
+.navbar-expand-sm .navbar-nav .nav-link.nav-active {
+    color: white;
+    text-shadow: 2px 2px 6px var(--ma-col-secondary);
+}
+
+.navbar-expand-sm .navbar-nav .nav-link:hover,
+.navbar-expand-sm .navbar-nav .nav-active.nav-link:hover{
     color: var(--ma-col-secondary);
+    text-shadow: initial}
+
+.nav-yt {
+    width: 50px;
+}
+
+.home-logo {
+    background-color: white;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    box-shadow: rgba(255, 255, 255, 0.24) 0 0 10px, rgba(255, 255, 255, 0.48) 0 0 15px;
+}
+
+.nav-logo {
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    box-shadow: rgba(255, 255, 255, 0.24) 0 0 5px, rgba(255, 255, 255, 0.48) 0 0 5px;
 }
