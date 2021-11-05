@@ -38,3 +38,7 @@ a:hover {
 img {
     max-width: 100%;
 }
+
+.picture-text {
+    white-space: nowrap;
+}
