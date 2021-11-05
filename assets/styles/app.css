@@ -34,3 +34,7 @@ a:hover {
 .paragraph {
     padding: 0 200px;
 }
+
+img {
+    max-width: 100%;
+}
