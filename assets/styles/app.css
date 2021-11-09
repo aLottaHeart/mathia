@@ -42,3 +42,8 @@ img {
 .nowrap {
     white-space: nowrap;
 }
+
+.mathia-text {
+    color: white;
+    text-shadow: 2px 2px 6px var(--ma-col-secondary);
+}

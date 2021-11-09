@@ -11,10 +11,9 @@ class AstroController extends AbstractController
     public function list(Request $request): Response
     {
         $img_names = [
-            0 => 'intro',
-            1 => 'tree',
-            2 => 'jupiter_saturn',
-            3 => 'andromeda'
+            0 => 'tree',
+            1 => 'jupiter_saturn',
+            2 => 'andromeda'
         ];
 
         $img_id = $request->get('img_id');

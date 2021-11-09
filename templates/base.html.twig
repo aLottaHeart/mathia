@@ -15,26 +15,31 @@
     </head>
     <body>
         <div class="navbar">
-            <div class="col-12 col-md-2 d-lg-block d-flex justify-content-center justify-content-lg-start px-3">
+            <div class="col-12 col-sm-2 d-lg-block d-flex justify-content-center justify-content-sm-start px-3">
                 <a href="{{ path('home') }}">
-                    <div class="d-flex justify-content-start justify-content-md-center align-items-center">
-                        <img class="nav-logo" src="{{ asset('build/mathia.png') }}" alt="Mathia logo">
-                        <div class="px-3">mathia</div>
+                    <div class="d-flex justify-content-start align-items-center">
+                        <img class="nav-logo-mathia" src="{{ asset('build/mathia.png') }}" alt="Mathia logo">
+                        <div class="px-3 mathia-text">mathia</div>
                     </div>
                 </a>
             </div>
-            <div class="col-12 col-md-8 d-flex justify-content-center navbar-expand-sm navbar-expand">
-                <div class="navbar-nav h3">
+            <div class="col-12 col-sm-8 d-flex justify-content-center justify-content-sm-end px-sm-3 justify-content-lg-center px-lg-0 navbar-expand-sm navbar-expand">
+                <div class="navbar-nav h3 justify-content-end">
                     {% for route,name in {'home': "Home", 'penguin': "Pingu", 'astro': "Astro", 'p5': "p5.js"} %}
                         <a class="nav-link {% if route == app.request.get('_route') %}nav-active{% endif %}" href="{{ path(route) }}">{{ name }}</a>
                     {% endfor %}
                 </div>
             </div>
-            <div class="d-none col-lg-2 d-lg-block d-flex justify-content-end justify-content-md-center px-3">
-                <a href="https://www.youtube.com/channel/UCdB8eBbhubYS2jxAhNAbKdw">
+            <div class="d-none col-lg-2 d-lg-flex justify-content-end align-items-center px-3">
+                <div class="px-2 mathia-text">Tammo</div>
+                <a class="px-2" href="https://www.youtube.com/channel/UCdB8eBbhubYS2jxAhNAbKdw">
                     <div class="d-flex justify-content-end align-items-center">
-                        <div class="px-3">Tammo</div>
-                        <img class="nav-yt" src="{{ asset('build/yt_icon_mono_dark.png') }}" alt="Youtube">
+                        <img class="nav-logo-youtube" src="{{ asset('build/yt_icon_mono_dark.png') }}" alt="Youtube">
+                    </div>
+                </a>
+                <a class="px-2" href="https://fuerikkusu-san.tumblr.com/">
+                    <div class="d-flex justify-content-end align-items-center">
+                        <img class="nav-logo-tumblr" src="{{ asset('build/logo-tumblr.png') }}" alt="Youtube">
                     </div>
                 </a>
             </div>
