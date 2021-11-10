@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+
+    <div class="d-flex justify-content-center flex-column align-items-center">
+        <h1>
+            A Starry Night
+        </h1>
+
+        <p class="d-none">
+            At the 15th of August in 2021 I tested the
+            Astrophotography-mode of my phone
+            and the next pages are a small collection of all the pictures
+            that I captured.
+        </p>
+        <div class="row">
+            <div class="col-lg-6 col-12">
+                <div class="picture-text text-center nowrap px-4">It was a beautiful clear night</div>
+                <img class="px-2" src="{{ asset('build/astro/milkyway.jpg') }}" alt="tree">
+            </div>
+            <div class="col-lg-6 col-12">
+                <div class="picture-text text-center nowrap px-4">I saw a lot of shooting stars</div>
+                <img class="px-2" src="{{ asset('build/astro/shootingstar.jpg') }}" alt="tree">
+            </div>
+            <div class="col-lg-6 col-12 pt-5">
+                <div class="picture-text text-center nowrap px-4">gaaaaziiing ...</div>
+                <img class="px-2" src="{{ asset('build/astro/tree.jpg') }}" alt="tree">
+            </div>
+            <div class="col-lg-6 col-12 pt-5">
+                <div class="picture-text text-center nowrap px-4">"the thinking penguins"</div>
+                <img class="px-2" src="{{ asset('build/astro/the_penguins.jpg') }}" alt="tree">
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

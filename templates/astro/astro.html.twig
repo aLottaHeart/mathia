@@ -2,32 +2,19 @@
 
 {% block content %}
 
-    <div class="d-flex justify-content-center flex-column align-items-center">
-        <h1>
-            A Night Journey
-        </h1>
-
-        <nav aria-label="Page navigation example">
-            <ul class="pagination pagination-sm">
-                {% set pages = {0: 'tree', 1: 'jupiter_saturn', 2: 'andromeda'} %}
-                <li class="page-item">
-                    <a class="page-link" href="{{ path('astro', {'img_id': img_id-1}) }}" aria-label="Previous">
-                        <span aria-hidden="true">&laquo;</span>
-                    </a>
-                </li>
-                {% for i,name in pages %}
-                    <li class="page-item {{ i != img_id ?: 'active' }}">
-                        <a class="page-link" href="{{ path('astro', {'img_id': i}) }}">{{ i }}</a>
-                    </li>
-                {% endfor %}
-                <li class="page-item">
-                    <a class="page-link" href="{{ path('astro', {'img_id': img_id+1}) }}" aria-label="Next">
-                        <span aria-hidden="true">&raquo;</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        {% block page %}{% endblock %}
+    <div class="pt-5">
+        <div class="d-flex">
+            <div class="mathia-text astro-link text-nowrap fst-italic">Aug 12th</div>
+            <a class="text-nowrap" href="{{ path('starry_night') }}">A Starry Night</a>
+        </div>
+        <div class="d-flex">
+            <div class="mathia-text astro-link text-nowrap fst-italic">Aug 15th</div>
+            <a class="text-nowrap" href="{{ path('signs_of_night_sky') }}">Sings of the Night Sky</a>
+        </div>
+        <div class="d-flex">
+            <div class="mathia-text astro-link text-nowrap fst-italic">&nbsp;&nbsp;Nov 4th</div>
+            <a class="text-nowrap" href="{{ path('valley_fog') }}">The Valley Fog</a>
+        </div>
     </div>
 
 {% endblock %}

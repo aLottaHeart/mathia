@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+
+    <div class="d-flex justify-content-center flex-column align-items-center">
+        <h1>
+            The Valley Fog
+        </h1>
+
+        <div class="row">
+            <div class="col-lg-12 col-12">
+                <img class="px-2" src="{{ asset('build/astro/tal2.jpg') }}" alt="tree">
+            </div>
+            <div class="col-lg-12 col-12 pt-5">
+                <img class="px-2" src="{{ asset('build/astro/tal3.jpg') }}" alt="tree">
+            </div>
+            <div class="col-lg-12 col-12 pt-5">
+                <img class="px-2" src="{{ asset('build/astro/tal1.jpg') }}" alt="tree">
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

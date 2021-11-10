@@ -10,20 +10,21 @@ class AstroController extends AbstractController
 {
     public function list(Request $request): Response
     {
-        $img_names = [
-            0 => 'tree',
-            1 => 'jupiter_saturn',
-            2 => 'andromeda'
-        ];
+        return $this->render('astro/astro.html.twig');
+    }
 
-        $img_id = $request->get('img_id');
-        if (!$img_id || $img_id < 0) {
-            $img_id = 0;
-        }
-        $img_id = min($img_id, count($img_names)-1);
+    public function starryNight(Request $request): Response
+    {
+        return $this->render('astro/starry_night/starry_night.html.twig');
+    }
 
-        return $this->render(sprintf('astro/%s.html.twig', $img_names[$img_id]), [
-            'img_id' => $img_id
-        ]);
+    public function signsOfNightSky(Request $request): Response
+    {
+        return $this->render('astro/sings_of_night_sky/sings_of_night_sky.html.twig');
+    }
+
+    public function valleyFog(Request $request): Response
+    {
+        return $this->render('astro/valley_fog/valley_fog.html.twig');
     }
 }

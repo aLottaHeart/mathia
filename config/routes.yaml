@@ -8,6 +8,15 @@ penguin:
 astro:
     path: /astro
     controller: App\Controller\AstroController::list
+starry_night:
+    path: /astro/starryNight
+    controller: App\Controller\AstroController::starryNight
+signs_of_night_sky:
+    path: /astro/signsOfNightSky
+    controller: App\Controller\AstroController::signsOfNightSky
+valley_fog:
+    path: /astro/valleyFog
+    controller: App\Controller\AstroController::valleyFog
 
 p5:
     path: /p5

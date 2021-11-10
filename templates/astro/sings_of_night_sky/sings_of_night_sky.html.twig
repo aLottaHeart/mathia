@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+
+    <div class="d-flex justify-content-center flex-column align-items-center">
+        <h1>
+            Sings of the Night Sky
+        </h1>
+
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center align-items-center text-center px-4 pb-2">
+                I can't believe it - the Andromeda galaxy!
+            </div>
+            <div class="col-12 px-2">
+                <img src="{{ asset('build/astro/andromeda.jpg') }}" alt="andromeda">
+            </div>
+            <div class="col-12 px-2 pt-5">
+                <img src="{{ asset('build/astro/jupiter_saturn.jpg') }}" alt="Jupiter and Saturn">
+            </div>
+            <div class="col-12 d-flex justify-content-center align-items-center text-center nowrap pt-5 px-4 pb-2">
+                Schwan = Cygnus<br>
+                Fuchs = Vulpecula<br>
+                Pfeil = Sagitta<br>
+                Delphin = Delphinus<br>
+                Füllen = Equuleus<br>
+                Adler = Aquila<br>
+                Wassermann = Aquarius<br>
+                Steinbock = Capricornus<br>
+                Kepheus = Cepheus<br>
+                Eidechse = Lacerta<br>
+                Dreieck = Triangulum<br>
+                Fische = Pisces<br>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
