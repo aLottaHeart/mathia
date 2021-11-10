@@ -48,10 +48,22 @@ img {
     text-shadow: 2px 2px 6px var(--ma-col-secondary);
 }
 
-.astro-link:after {
+.astro-link-date:after {
     color: white;
     text-shadow: 4px 4px 2px var(--ma-col-secondary);
     content: "✫";
+    padding-left: 15px;
+    padding-right: 40px;
+}
+
+.astro-link:before {
+    color: var(--ma-col-secondary);
+    content: "»";
+    padding-right: 10px;
+}
+
+.astro-link:after {
+    color: var(--ma-col-secondary);
+    content: "«";
     padding-left: 10px;
-    padding-right: 20px;
 }
