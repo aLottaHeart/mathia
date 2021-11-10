@@ -31,7 +31,7 @@ class AstroController extends AbstractController
 
     public function downloadImage(Request $request): Response
     {
-        $file = sprintf('build/astro/%s', $request->get('filename'));
+        $file = sprintf('../assets/images/astro/%s', $request->get('filename'));
 
         return $this->file($file);
     }
