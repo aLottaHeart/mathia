@@ -17,6 +17,9 @@ signs_of_night_sky:
 valley_fog:
     path: /astro/valleyFog
     controller: App\Controller\AstroController::valleyFog
+download_image:
+    path: /astro/download
+    controller: App\Controller\AstroController::downloadImage
 
 p5:
     path: /p5

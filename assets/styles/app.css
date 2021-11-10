@@ -67,3 +67,7 @@ img {
     content: "«";
     padding-left: 10px;
 }
+
+.font-50 {
+    font-size: 75%;
+}
